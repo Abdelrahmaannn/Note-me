@@ -1,0 +1,189 @@
+body {
+  background-color: #f8f8f8;
+}
+
+.my-nav {
+  background-color: #f2eae1;
+  /* position: fixed; */
+  width: 100%;
+}
+
+.navbar-brand {
+  font-family: "Mochiy Pop One", sans-serif;
+
+  font-family: 200;
+  font-size: 30px;
+  padding-top: 10px;
+  border-left: 10px solid #feaf00;
+  padding-left: 10px;
+}
+
+.my-btn {
+  background-color: transparent;
+  border: 3px solid #feaf00;
+  font-family: "Montserrat", sans-serif;
+}
+
+.my-btn:hover {
+  background-color: #feaf00;
+  color: #fff;
+}
+
+.main {
+  height: 100vh;
+}
+
+.main h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.first-section {
+  border-bottom: 3px solid #e5e5e5;
+  padding-bottom: 40px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.first-section h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.first-section input {
+  width: 60%;
+}
+
+.first-section input:focus {
+  box-shadow: 0 0 0 0;
+  border-color: #feaf00;
+}
+
+.first-section .my-btn {
+  background-color: #feaf00;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.first-section .my-btn:hover {
+  background-color: #eaa91f;
+}
+
+.my-card {
+  background-color: #fff;
+  box-shadow: 10px 10px 10px rgb(217, 217, 217);
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.my-card h3 {
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 10px;
+}
+
+.my-card p {
+  font-family: "Montserrat", sans-serif;
+}
+.my-card i {
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.my-card i:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.edit {
+  color: #eaa91f;
+}
+
+.delete {
+  color: rgb(255, 56, 56);
+  padding-left: 10px;
+}
+
+.note
+{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.note input
+{
+    width: 70%;
+    margin-bottom:15px ;
+}
+
+.note input:focus
+{
+    box-shadow: 0 0 0 0;
+    border-color: #eaa91f;
+}
+
+.note textarea
+{
+    resize: none;
+    width: 70%;
+}
+
+.note textarea:focus
+{
+    box-shadow: 0 0 0 0;
+    border-color: #eaa91f;
+}
+
+.add-btn
+{
+    background-color: #feaf00;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    border-color: #feaf00;
+}
+
+.add-btn:hover
+{
+    background-color: #eaa91f;
+    border-color: #eaa91f;
+}
+
+.update-btn
+{
+    background-color: #61fe00;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    border-color: #61fe00;
+}
+
+.update-btn:hover
+{
+    background-color: #71f81d;
+    border-color: #71f81d;
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+  .first-section {
+    flex-direction: column;
+  }
+
+  .first-section input {
+    width: 100%;
+    margin: auto;margin-bottom: 10px;
+  }
+
+  .note input
+{
+    width: 70%;
+    margin-bottom:15px ;
+}
+}

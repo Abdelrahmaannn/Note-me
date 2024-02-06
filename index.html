@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="images/favicon_io (1)/favicon.ico" type="image/x-icon">
+
+
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="Sign-up-form pb-4">
+        <div class="text-center">
+          <img
+            src="images/3d-casual-life-busy-female-student.png"
+            alt="img"
+            class="py-4"
+          />
+
+          <h1>Save Your Thoughts..</h1>
+
+          <h4>SIGN UP</h4>
+
+          <h5>Enter your credentials to access your account</h5>
+        </div>
+
+        <label for="userName"
+          >User Name
+          <span id="nameValidation" class="ps-2 text-danger d-none">*Enter Valid Name*</span></label
+        >
+        <input
+          type="text"
+          placeholder="At least 3 charchters"
+          name="userName"
+          id="userName"
+          class="form-control custom-form"
+        />
+
+        <label for="email">
+          Email <span id="emailValidation" class="ps-2 text-danger d-none">*Enter Valid Email*</span>
+
+          <span id="emailExistence" class="ps-2 text-danger d-none"
+            >*this user already exists*</span
+          ></label
+        >
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          id="email"
+          class="form-control custom-form"
+        />
+
+        <label for="password">
+          password
+          <span id="passwordValidation" class="ps-2 text-danger d-none">*Enter Valid password*</span></label
+        >
+        <input
+          type="password"
+          name="password"
+          placeholder=" min 8 charchters and 10 max, 1 upper case letter, 1 lower case letter"
+          id="password"
+          class="form-control custom-form"
+        />
+
+        <div class="text-center">
+          <button class="btn my-btn">SIGN UP</button>
+
+          <h6>
+            have an account? <span><a href="login.html">LOGIN</a></span>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

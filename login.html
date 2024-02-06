@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/login.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="images/favicon_io (1)/favicon.ico" type="image/x-icon">
+
+
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="Sign-up-form pb-4">
+        <div class="text-center">
+          <img
+            src="images/3d-casual-life-office-supplies.png"
+            alt="img"
+            class="py-4"
+          />
+
+          <h1>Save Your Thoughts..</h1>
+
+          <h4>LOGIN</h4>
+
+          <h5>Enter your credentials to access your account</h5>
+        </div>
+
+        <label for="email">
+          Email <span id="emailValidation" class="ps-2 text-danger d-none">*Enter Valid Email*</span></label
+        >
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          id="email"
+          class="form-control custom-form"
+        />
+
+        <label for="password">
+          password
+          <span id="passwordValidation" class="ps-2 text-danger d-none">*Enter Valid password*</span></label
+        >
+        <input
+          type="password"
+          name="password"
+          placeholder=" min 8 charchters and 10 max, 1 upper case letter, 1 lower case letter"
+          id="password"
+          class="form-control custom-form"
+        />
+
+        <div class="text-center">
+          <button class="btn my-btn">LOGIN</button>
+
+          <h6>
+           Don't have an account? <span><a href="index.html">SIGN UP</a></span>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

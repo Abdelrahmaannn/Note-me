@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/home.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="images/favicon_io (1)/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar my-nav navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Note ME</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <button class="btn my-btn ms-auto mt-3">
+            Log out <i class="fa-solid fa-arrow-right-from-bracket ps-2"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="main text-center">
+        <h1 id="Username"></h1>
+
+        <section class="first-section mt-3">
+          <h3 class="">Notes List</h3>
+          <input class="form-control" type="search" placeholder="Search here" />
+          <button
+            class="btn my-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            ADD NEW Note
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Add your note here
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <!-- ********************************* -->
+                <!-- modal body -->
+                <div class="note pb-4">
+                  <input
+                    type="text"
+                    placeholder="Enter note name"
+                    class="form-control mx-auto"
+                    id="noteName"
+                  />
+
+                  <textarea
+                    name="notes"
+                    class="form-control mx-auto"
+                    placeholder="Write what you want here"
+                    id="noteBody"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary clear-btn">
+                    Clear
+                  </button>
+
+                  <button type="button" class="btn btn-primary add-btn">
+                    Add Note
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary update-btn d-none"
+                  >
+                    Update Note
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="notes row">
+          <!--  -->
+          
+        </section>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
