@@ -137,7 +137,7 @@
     noteName.value = notesList[i].NoteName;
     noteBody.value = notesList[i].NoteBody;
     addBtn.classList.add("d-none");
-    updateBtn.classList.remove("d-none");
+    updateBtn.classList.replace("d-none", "d-flex");
   }
 
   updateBtn.addEventListener("click", function () {
